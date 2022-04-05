@@ -1,25 +1,25 @@
-# Dima Sobolevsky
+## Dima Sobolevsky
 
 ![photo-profile](avatar.png)
 
-# Contacts
+## Contacts
 
 - Email: sobolevskii.dmit@gmail.com
 - GitHub: [DimkaSob](https://github.com/DimkaSob)
 
-# About Me
+## About Me
 
 Im 27 years old. Long time I worked on TV. Recently decided to change my profession, started to learn Front-End. I am easy to learning and working in a team.
 I am keep learning...
 
-# Skills
+## Skills
 
     - HTML
     - CSS
     - JavaScript (Basic)
     - GitHub
 
-# Code Example
+## Code Example
 
 ```
 /*burger-menu*/
@@ -34,3 +34,18 @@ function toggleMenu () {
 burger.addEventListener("click", toggleMenu);
 signature.addEventListener("click", toggleMenu);
 ```
+
+## Experience
+
+My study project at hyperskill.org : https://dimkasob.github.io/virtual-piano/
+
+## Education
+
+- University: Belarusian National Technical University, automobile engineer
+- Courses:
+  - at the RS School learning stage
+  - hyperskill.org (uncompleted)
+
+## English
+
+A1
