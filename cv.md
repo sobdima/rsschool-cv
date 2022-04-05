@@ -1,8 +1,9 @@
 # Dima Sobolevsky
 
-- Contacts
-  - Email: sobolevskii.dmit@gmail.com
-  - GitHub: [DimkaSob](https://github.com/DimkaSob)
+# Contacts
+
+- Email: sobolevskii.dmit@gmail.com
+- GitHub: [DimkaSob](https://github.com/DimkaSob)
 
 # About Me
 
