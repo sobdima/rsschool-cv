@@ -9,7 +9,7 @@
 
 ## About Me
 
-Im 27 years old. Long time I worked on TV. Recently decided to change my profession, started to learn Front-End. I am easy to learning and working in a team.
+I'm 27 years old. Long time I worked on TV. Recently decided to change my profession, started to learn Front-End. I am easy to learning and working in a team.
 I am keep learning...
 
 ## Skills
