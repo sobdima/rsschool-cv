@@ -1,5 +1,7 @@
 # Dima Sobolevsky
 
+![photo-profile](rs-school/rsschool-cv/avatar.png)
+
 # Contacts
 
 - Email: sobolevskii.dmit@gmail.com
