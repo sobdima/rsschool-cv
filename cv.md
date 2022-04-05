@@ -1,6 +1,6 @@
 # Dima Sobolevsky
 
-![photo-profile](rs-school/rsschool-cv/avatar.png)
+![photo-profile](/rs-school/rsschool-cv/avatar.png)
 
 # Contacts
 
