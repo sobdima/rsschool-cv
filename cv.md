@@ -39,8 +39,8 @@ signature.addEventListener("click", toggleMenu);
 ## Experience
 
 My study project at hyperskill.org : 
-• https://dimkasob.github.io/virtual-piano/
-• https://dimkasob.github.io/to-do-list/
+• https://sobdima.github.io/virtual-piano/
+• https://sobdima.github.io/to-do-list/
 
 ## Education
 
