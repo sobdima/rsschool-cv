@@ -1,6 +1,6 @@
 ## Dima Sobolevsky
 
-![photo-profile](./assets/img/avatar.jpg)
+![photo-profile](assets/img/avatar.JPG)
 
 ## Contacts
 
