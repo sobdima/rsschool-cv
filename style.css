@@ -156,9 +156,10 @@ a {
 .skill-level::after {
     content: "";
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    border-radius: 4px;
     background-color: var(--left-title-color);
 }
 
