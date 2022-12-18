@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitrij Sobolevskij</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="column">
+
+            <div class="left-column">
+                <header class="header">
+                    <img class="avatar" src="assets/img/avatar.JPG" alt="avatar">
+                    <h1>Dmitrij Sobolevskij</h1>
+                    <h2>Junior Front-End Developer</h2>
+                </header>
+
+                <main class="main">
+                    <section class="section contacts">
+                        <h3 class="main-title">Contacts</h3>
+                        <ul class="list">
+                            <li>
+                                <p class="contact-subtitle">Phone</p>
+                                <p class="contact">+995 574 111 694</p>
+                            </li>
+                            <li>
+                                <p class="contact-subtitle">Email</p>
+                                <p class="contact">sobolevskii.dmit@gmail.com</p>
+                            </li>
+                            <li>
+                                <p class="contact-subtitle">GitHub</p>
+                                <p class="contact"><a href="https://github.com/sobdima">sobdima</a></p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section skills">
+                        <h3 class="main-title">Skills</h3>
+                        <ul class="list">
+                            <li>
+                                <p class="skill-subtitle">Html</p>
+                                <div class="skill-level level-70"></div>
+                            </li>
+                            <li>
+                                <p class="skill-subtitle">Css</p>
+                                <div class="skill-level level-60"></div>
+                            </li>
+                            <li>
+                                <p class="skill-subtitle">Js</p>
+                                <div class="skill-level level-40"></div>
+                            </li>
+                            <li>
+                                <p class="skill-subtitle normal-case">Git, GitHub</p>
+                                <div class="skill-level level-30"></div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="section languages">
+                        <h3 class="main-title">Languages</h3>
+                        <ul class="list">
+                            <li>
+                                <p class="language-subtitle">English - A1</p>
+                            </li>
+                            <li>
+                                <p class="language-subtitle">Russian - native</p>
+                            </li>
+                            <li>
+                                <p class="language-subtitle">Belarussian - native</p>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+            </div>
+
+            <div class="right-column">
+                <section>
+                    <div class="subtitle">
+                        <h3>Education</h3>
+                    </div>
+                    <ul class="right-column-list">
+                        <li>University: Belarusian National Technical University (2017)</li>
+                        <li>hyperskill.org (introduction)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <div class="subtitle">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="projects">
+                        <div class="item-project">
+                            <a href="https://sobdima.github.io/virtual-piano/" target="_blank">
+                                <img class="project-image" src="./assets/img/piano.jpg" alt="piano">
+                            </a>
+                            <p class="project-title">Piano</p>
+                        </div>
+                        <div class="item-project">
+                            <a href="https://sobdima.github.io/to-do-list/" target="_blank">
+                                <img class="project-image" src="./assets/img/to-do-list.jpg" alt="to-do-list">
+                            </a>
+                            <p class="project-title">To-Do List</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="subtitle">
+                        <h3>About</h3>
+                    </div>
+                    <p class="about-me-text">Easy learner and easy to deal with so I work well in any team. Responsible
+                        and attentive to details. I have a creative, structured mindset and excellent communication
+                        skills.</p>
+                    <p class="about-me-text">For a long time I was somewhat a dreamer, but now I prefer seeing the
+                        results of my work. Always ready to expand my horizons and try something new.</p>
+                </section>
+
+
+                <section class="code-example">
+                    <div class="subtitle">
+                        <h3>Code Example</h3>
+                    </div>
+                    <div class="code">
+                        <pre>
+                            /*burger-menu*/
+                            const signature = document.querySelector(".signature");
+                            const burger = document.querySelector(".burger");
+                                                
+                            function toggleMenu () {
+                                signature.classList.toggle("showMenu");
+                                burger.classList.toggle("active");
+                            };
+                                                
+                            burger.addEventListener("click", toggleMenu);
+                            signature.addEventListener("click", toggleMenu);
+                        </pre>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="https://rs.school/js/" target="_blank">
+                <img class="rsschool-logo" src="./assets/rs_school_js.svg" alt="rsschool-logo">
+            </a>
+            <p class="footer-subtitle">2022</p>
+            <a href="https://github.com/sobdima" target="_blank">
+                <img class="github-logo" src="./assets/github-mark.png" alt="git-hub-logo">
+            </a>
+        </footer>
+    </div>
+
+</body>
+
+</html>
