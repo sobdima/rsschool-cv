@@ -1,287 +1,328 @@
 /*common styles*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: black;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
 }
 
 .wrapper {
-    max-width: 1440px;
-    width: 1024px;
-    margin: 25px auto;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 40px;
+  max-width: 1440px;
+  width: 1024px;
+  margin: 25px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 40px;
+}
+
+nav {
+  box-shadow: 0px 3px 10px rgba(50, 77, 112, 0.5);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  padding: 10px 0;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 14px;
+  color: black;
+}
+
+.navigation a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: rgb(50, 77, 112);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.navigation a:hover::after {
+  width: 100%;
 }
 
 .column {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*variables*/
 :root {
-    --left-main-color: rgb(224, 187, 84);
-    --left-title-color: rgb(230, 230, 230);
-    --right-border-color: rgb(134, 134, 134);
+  --left-main-color: rgb(224, 187, 84);
+  --left-title-color: rgb(230, 230, 230);
+  --right-border-color: rgb(134, 134, 134);
 }
 
 /*-- -- --*/
-
 
 /*columns styles*/
 .left-column {
-    width: 32%;
-    background-color: rgb(50, 77, 112);
+  width: 32%;
+  background-color: rgb(50, 77, 112);
+  z-index: 2;
 }
 
 .right-column {
-    position: relative;
-    width: 68%;
+  position: relative;
+  width: 68%;
 }
 
 /*-- -- --*/
 
-
 /*header*/
 .header {
-    padding: 25px 0;
-    text-align: center;
+  padding: 25px 0;
+  text-align: center;
 }
 
 .header h1 {
-    margin: 15px 0;
-    text-transform: uppercase;
-    color: var(--left-main-color);
+  margin: 15px 0;
+  text-transform: uppercase;
+  color: var(--left-main-color);
 }
 
 .header h2 {
-    font-size: 1em;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: var(--left-title-color);
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--left-title-color);
 }
 
 .avatar {
-    width: 80%;
-    border: 5px solid var(--left-main-color);
-    border-radius: 50%;
+  width: 80%;
+  border: 5px solid var(--left-main-color);
+  border-radius: 50%;
 }
 
 /*-- -- --*/
 
 /*main*/
 .section {
-    padding: 0px 25px;
+  padding: 0px 25px;
 }
 
 .main-title {
-    text-align: center;
-    padding: 15px 0;
-    text-transform: uppercase;
-    color: var(--left-main-color);
+  text-align: center;
+  padding: 15px 0;
+  text-transform: uppercase;
+  color: var(--left-main-color);
 }
 
 .list {
-    padding: 0 20px;
-    line-height: 20px;
-    list-style-type: none;
+  padding: 0 20px;
+  line-height: 20px;
+  list-style-type: none;
 }
 
 .languages {
-    margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .list li {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /*-- -- --*/
 
 /*contacts*/
 .contact-subtitle {
-    font-weight: 700;
-    color: rgb(194, 194, 194);
-    ;
+  font-weight: 700;
+  color: rgb(194, 194, 194);
 }
 
 .contact {
-    color: var(--left-title-color);
+  color: var(--left-title-color);
 }
 
 .contact a {
-    transition: color 0.5s;
-    color: var(--left-title-color);
+  transition: color 0.5s;
+  color: var(--left-title-color);
 }
 
 .contact a:hover {
-    color: var(--left-main-color);
+  color: var(--left-main-color);
 }
 
 /*-- -- --*/
 
 /*skills*/
 .skill-subtitle {
-    text-transform: uppercase;
-    color: var(--left-title-color);
+  text-transform: uppercase;
+  color: var(--left-title-color);
 }
 
 .normal-case {
-    text-transform: none;
+  text-transform: none;
 }
 
 .skill-level {
-    position: relative;
-    width: 100%;
-    height: 20px;
-    border: 2px solid var(--left-title-color);
-    border-radius: 4px;
-    transition: 0.5s;
-}
-
-.skill-level:hover {
-    transform: scale(1.1);
+  position: relative;
+  width: 100%;
+  height: 20px;
+  border: 1px solid var(--left-title-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .skill-level::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    bottom: -2px;
-    left: -2px;
-    border-radius: 4px;
-    background-color: var(--left-title-color);
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--left-title-color);
+}
+
+.level-90::after {
+  width: 90%;
 }
 
 .level-70::after {
-    width: 70%;
+  width: 70%;
 }
 
 .level-60::after {
-    width: 60%;
+  width: 60%;
 }
 
-.level-40::after {
-    width: 40%;
+.level-50::after {
+  width: 50%;
 }
-
-.level-30::after {
-    width: 30%;
-}
-
-/*-- -- --*/
 
 /*languages*/
 .language-subtitle {
-    color: var(--left-title-color);
+  color: var(--left-title-color);
 }
-
-/*-- -- --*/
-
 
 /*right column*/
 .subtitle {
-    margin-top: 25px;
-    padding: 5px 20px;
-    font-size: 20px;
-    border-top: 1px solid var(--right-border-color);
-    border-bottom: 1px solid var(--right-border-color);
+  margin-top: 25px;
+  padding: 5px 20px;
+  font-size: 20px;
+  border-top: 1px solid var(--right-border-color);
+  border-bottom: 1px solid var(--right-border-color);
 }
 
 .right-column-list {
-    padding: 20px 0 0 20px;
-    list-style-type: circle;
-    list-style-position: inside;
+  padding: 20px 0 0 20px;
+  list-style-type: circle;
+  list-style-position: inside;
 }
 
 .right-column-list li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.right-column-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-column-list a:hover {
+  color: var(--left-main-color);
+  font-weight: 600;
 }
 
 .projects {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
 }
 
 .item-project {
-    width: 40%;
+  width: 40%;
 }
 
 .project-image {
-    width: 100%;
-    transition: 0.5s;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 .project-image:hover {
-    box-shadow: rgba(0, 0, 0, 0.55) 0px 15px 40px;
+  /* box-shadow: rgba(0, 0, 0, 0.55) 0px 15px 40px; */
+  box-shadow: rgba(107, 95, 61, 0.55) 0px 5px 20px;
 }
 
 .project-title {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .about-me-text {
-    padding: 25px 25px 0 25px;
-    line-height: 27px;
+  padding: 25px 25px 0 25px;
+  line-height: 27px;
 }
 
 .about-me-text:last-child {
-    padding: 0 25px 0 25px;
+  padding: 0 25px 0 25px;
 }
 
 .code {
-    background-color: #f5f5f5;
-    padding-top: 20px;
-    font-family: monospace;
+  background-color: #f5f5f5;
+  padding: 30px 40px;
+  font-family: monospace;
 }
 
 pre {
-    margin-left: -120px;
+  /* margin-left: -120px; */
+  /* transform: translateX(-120px); */
+  width: 100%;
+  display: inline-block;
+  white-space: pre-line;
 }
 
 /*-- -- --*/
 
-
 /*footer*/
 .footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px 0px;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.rsschool-logo {
-    width: 70px;
+#Layer_1 {
+  width: 70px;
 }
 
-.rsschool-logo:hover {
-    transform: scale(1.1);
+#Layer_1:hover ellipse {
+  fill: var(--left-main-color);
 }
 
 .footer-subtitle {
-    font-size: 18px;
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .github-logo {
-    width: 40px;
+  width: 40px;
+  height: 40px;
 }
 
-.github-logo:hover {
-    transform: scale(1.1);
+.github-logo:hover path {
+  /* fill: gainsboro; */
+  fill: var(--left-title-color);
 }
 
 /*-- -- --*/
